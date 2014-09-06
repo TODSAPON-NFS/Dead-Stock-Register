@@ -8,5 +8,4 @@ It gives a user interface to the managers and at the same time keeps an easy bac
 ### Resources
 The project report for this project is available [here].
 
-
-[here] : (http://1drv.ms/1xoD0Or)
+[here]:http://1drv.ms/1xoD0Or
