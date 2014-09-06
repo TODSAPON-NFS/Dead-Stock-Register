@@ -1,0 +1,191 @@
+﻿<%@ Master Language="VB" CodeFile="MasterTS.master.vb" Inherits="MasterTS" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        #Page
+        {
+            top: 87px;
+            left: 144px;
+            position: absolute;
+            height: 655px;
+            width: 753px;
+        }
+        #Sidebar
+        {
+            top: 87px;
+            left: 0px;
+            position: absolute;
+            height: 800px;
+            width: 234px;
+        }
+        #Topbar
+        {
+            height: 87px;
+        }
+        #form1
+        {
+            left: 0px;
+            position: absolute;
+            height: 87px;
+            width: 1280px;
+            top: 0px;
+        }
+        #showuser
+        {
+            top: 25px;
+            left: 334px;
+            position: absolute;
+            height: 20px;
+            width: 179px;
+        }
+        .showuser
+        {
+            font-family: "MS PGothic";
+            font-size: large;
+            font-weight: bold;
+        }
+       
+    </style>
+</head>
+<body bgcolor="#000000">
+    <form id="form1" runat="server">
+    
+    <div id="Sidebar" 
+        
+        
+        
+        
+        
+        style="background: #3366FF url('/D:/College/Project/_latest1/sidebar.jpg') no-repeat fixed; visibility: visible; z-index: 3; ">
+        <asp:Image ID="Image10" runat="server" ImageUrl="~/sep2.jpg" 
+        
+        
+            
+            
+            
+            style="top: 336px; left: 0px; position: absolute; margin-right: 0px; z-index: 1; height: 2px; width: 232px;" />
+        <asp:Image ID="Image14" runat="server" ImageUrl="~/sep2.jpg" 
+        
+        
+            
+            
+            
+            style="top: 97px; left: 0px; position: absolute; margin-right: 0px; z-index: 1; height: 2px; width: 232px;" />
+        <asp:Image ID="Image13" runat="server" ImageUrl="~/sep2.jpg" 
+        
+        
+            
+            
+            
+            style="top: 156px; left: 1px; position: absolute; margin-right: 0px; z-index: 1; height: 2px; width: 232px;" />
+        <asp:Image ID="Image12" runat="server" ImageUrl="~/sep2.jpg" 
+        
+        
+            
+            
+            
+            style="top: 213px; left: 2px; position: absolute; margin-right: 0px; z-index: 1; height: 2px; width: 232px;" />
+        <asp:Image ID="Image11" runat="server" ImageUrl="~/sep2.jpg" 
+        
+        
+            
+            
+            
+            style="top: 273px; left: 1px; position: absolute; margin-right: 0px; z-index: 1; height: 2px; width: 232px;" />
+        <asp:Image ID="Image2" runat="server" ImageUrl="~/sep2.jpg" 
+        
+        
+            
+            
+            
+            style="top: 394px; left: 0px; position: absolute; margin-right: 0px; z-index: 1; height: 2px; width: 232px;" />
+        <asp:Menu ID="sidemenu" runat="server" 
+            
+            
+            style="z-index: 2; left: 50px; top: 100px; position: absolute; height: 295px; width: 182px; bottom: 405px; margin-bottom: 0px;" 
+            Font-Size="Large" Font-Bold="True" Font-Names="Corbel" 
+            StaticPopOutImageTextFormatString="" BorderStyle="None" 
+            Font-Overline="False" ForeColor="Black">
+            <StaticMenuStyle BorderStyle="None" VerticalPadding="0px" Height="50px" 
+                Width="182px" HorizontalPadding="5px" />
+            <StaticMenuItemStyle Height="50px" 
+                Width="178px" BorderColor="White" BorderStyle="None" 
+                HorizontalPadding="5px" />
+            <DynamicMenuItemStyle BackColor="#2E77AF" ForeColor="Black" BorderStyle="None" 
+                Width="80px" Height="50px" />
+            <StaticHoverStyle BackColor="#7C6F57" ForeColor="White" Font-Size="Large" />
+            <Items>
+                <asp:MenuItem Text="               Manage Users" Value="Manage Users" >
+                    <asp:MenuItem Text="Add" Enabled="true"  Value="Add" 
+                        NavigateUrl="~/Adduser.aspx">
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Delete" Enabled="true" Value="Delete" 
+                        NavigateUrl="~/deluser.aspx">
+                    </asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/add.aspx" Text="            Add New Stock" 
+                    Value="Add New Stock"></asp:MenuItem>
+                <asp:MenuItem Text="                Search Record" Value="Search Record" 
+                    NavigateUrl="~/Search.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="               Change Password" Value="Change Password" 
+                    NavigateUrl="changepass.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="                     Log Out" Value="Log Out"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+        <asp:Image ID="Image3" runat="server" BorderColor="Black" BorderStyle="Solid" 
+            ImageUrl="~/mescoe.png" 
+            style="z-index: -1; visibility: visible; display: block; top: -78px; left: 27px; position: absolute; width: 66px; height: 70px; bottom: 808px; background: #C0C0C0 url('topb1.jpg') fixed center" />
+        <asp:Image ID="Image8" runat="server" ImageUrl="~/Padlock-icon.png" 
+            style="visibility: visible; z-index: 3; top: 341px; left: 3px; position: absolute; height: 46px; width: 50px; background: #3366FF url('/D:/College/Project/_latest1/sidebar.jpg') no-repeat fixed" />
+        <asp:Image ID="Image7" runat="server" ImageUrl="~/Key-icon.png" 
+            style="visibility: visible; z-index: 3; top: 281px; left: 2px; position: absolute; height: 46px; width: 50px; background: #3366FF url('/D:/College/Project/_latest1/sidebar.jpg') no-repeat fixed" />
+        <asp:Image ID="Image9" runat="server" ImageUrl="~/Project.png" 
+            style="visibility: visible; z-index: 3; top: 161px; left: -1px; position: absolute; height: 47px; width: 47px; background: #3366FF url('/D:/College/Project/_latest1/sidebar.jpg') no-repeat fixed" />
+        <asp:Image ID="Image6" runat="server" ImageUrl="~/Search-icon.png" 
+            style="visibility: visible; z-index: 3; top: 219px; left: 2px; position: absolute; height: 47px; width: 47px; background: #3366FF url('/D:/College/Project/_latest1/sidebar.jpg') no-repeat fixed" />
+        <asp:Image ID="Image5" runat="server" ImageUrl="~/User-icon.png" 
+            style="visibility: visible; z-index: 3; top: 104px; left: 3px; position: absolute; height: 47px; width: 47px; background: #3366FF url('/D:/College/Project/_latest1/sidebar.jpg') no-repeat fixed" />
+    </div>
+    <div id="Topbar" 
+        
+        
+        
+        
+        
+        
+        
+        
+        style="background-position: top; background: #C0C0C0 url('itopbar.jpg') fixed center; z-index: -1; visibility: visible; display: block; top: 0px; left: 0px; position: absolute; width: 1740px;"> 
+        <div id="showuser" style="z-index: 1">
+            <asp:Image ID="img_user" runat="server" ImageUrl="~/user_male.png" 
+                style="z-index: 1; top: -16px; left: -69px; position: absolute; height: 66px; width: 65px; right: 183px; margin-top: 0px" />
+        <asp:Label ID="user" runat="server" Text="user" CssClass="showuser" 
+                Font-Bold="True" Font-Names="Candara" Font-Size="Large" ForeColor="White"></asp:Label>
+        </div>
+        <div style="margin: 0px; top: 50px; left: 1149px; position: absolute; width: 70px; z-index: 1; visibility: visible; display: block; height: 25px; background: fixed center; color: #FFFFFF; background-color: #990033;">
+            
+            <center>
+                <asp:LinkButton ID="LinkButton1" runat="server" ForeColor="White" 
+                    Font-Names="Candara" Font-Underline="True" CausesValidation="False">Logout</asp:LinkButton>
+            </center>
+        </div>
+    </div>
+    <div id="Page" 
+
+        
+        style="background: #B9CDE1 scroll left top; width: 1614px; height: 800px; z-index: -1; visibility: visible; margin-right: 10px; ">
+    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+          
+        
+        </asp:ContentPlaceHolder></div>
+    </form>
+        
+</body>
+</html>
